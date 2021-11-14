@@ -103,12 +103,14 @@ a {
     font-size: 1.3rem;
 }
 
+.landing {
+ max-height: 76vh;
+}
+
 /* FEATURES SECTION */
 #feature-section {
 
-position: relative;
-    top:10vh;
-    z-index: 100;
+
 
 
 
@@ -122,12 +124,11 @@ position: relative;
 }
 
 .image-container{
-    top: 12%;
+    top: -76vh;
     left: 0;
-    width: 100%;
-    height: 100%;
+     height: 76vh; 
     overflow: hidden;
-    position: absolute;
+    position: relative;
     opacity: 0.8;
     transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
     z-index: -1;
@@ -135,8 +136,3 @@ position: relative;
 
 }
 
-.image-container img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
